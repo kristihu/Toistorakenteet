@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>teht4</title>
+</head>
+<body>
+<script>
+    'use strict';
+
+    var nopat, i, heitto, summa;
+    summa = 0;
+    nopat = prompt("Anna noppien lukumäärä niin heitän niitä kerran ja tulostan summan");
+
+    for (i = nopat; nopat>0; nopat--){
+      heitto = Math.floor((Math.random() * 6) + 1);
+      summa += heitto;
+    }
+    alert("Noppien heittojen summa on: " +summa+'');
+
+</script>
+
+</body>
+</html>

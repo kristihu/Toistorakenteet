@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>teht2</title>
+</head>
+<body>
+<script>
+    'use strict';
+
+    var luku, juuri;
+
+    luku = parseInt(prompt("Anna joku luku niin tulostan sen neliöjuuren"));
+    while (luku <= 0) {
+      luku = prompt("anna uusi positiivinen luku muu kuin 0");
+    }
+    juuri = Math.sqrt(luku);
+    document.write("luvun neliöjuuri on: " +juuri+'');
+
+
+</script>
+</body>
+</html>

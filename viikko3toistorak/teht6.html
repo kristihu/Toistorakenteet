@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> teht6</title>
+</head>
+<body>
+<h1> teht6</h1>
+<script>
+  'use strict';
+  var nopat, summa, heitto;
+  var i, j;
+  var lisaa = 0;
+  nopat = prompt("Anna noppien lukumäärä ");
+  summa = prompt("Anna summa mihin pyrit");
+
+  for (i = 0; i < 1000; i++){
+    var uusisumma = 0;
+
+    for (j = 0; j < nopat; j++) {
+      heitto = Math.floor((Math.random() * 6) + 1);
+      uusisumma += heitto;
+    }
+    if (uusisumma == summa){
+      lisaa+=1;
+    }
+
+  }
+  var tulos = lisaa/1000;
+  document.write(tulos);
+
+
+</script>
+</body>
+</html>
